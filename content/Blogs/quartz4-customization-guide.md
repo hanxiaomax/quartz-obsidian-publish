@@ -1,11 +1,9 @@
 ---
-title: "如何优雅地定制 Quartz4"
-description: "通过自定义组件和样式来定制 Quartz4，无需修改核心代码"
+title: 如何优雅地定制 Quartz4
+description: 通过自定义组件和样式来定制 Quartz4，无需修改核心代码
 date: 2024-04-02
 tags:
-  - Quartz4
-  - 教程
-  - 前端
+  - quartz
 ---
 
 # 如何优雅地定制 Quartz4

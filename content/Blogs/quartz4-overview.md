@@ -1,11 +1,9 @@
 ---
-title: "Quartz4 核心特性与定制概览"
-description: "总结 Quartz4 的主要功能、定制选项和构建流程"
+title: Quartz4 核心特性与定制概览
+description: 总结 Quartz4 的主要功能、定制选项和构建流程
 date: 2024-04-03
 tags:
-  - Quartz4
-  - 总结
-  - 架构
+  - quartz
 ---
 
 # Quartz4 核心特性与定制概览
