@@ -22,7 +22,8 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
-
+import MenuButton from "./MenuButton"
+import LinkMap from "./LinkMap"
 export {
   ArticleTitle,
   Content,
@@ -48,4 +49,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  MenuButton,
+  LinkMap,
 }

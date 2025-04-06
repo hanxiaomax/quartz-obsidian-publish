@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "软体动物",
+    pageTitleSuffix: "Software animal",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -20,35 +20,35 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Silkscreen",
+        body: "Silkscreen",
+        code: "Silkscreen",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ffffff", // 白练 - Shiroaji，温暖的米白色
+          lightgray: "#eae5e3", // 白鼠 - Shironezumi，淡灰白
+          gray: "#8f8681", // 茶鼠 - Chanezumi，温暖的中性灰
+          darkgray: "#595455", // 墨 - Sumi，深沉的暖灰
+          dark: "#2d2b2b", // 烏羽 - Karasuhane，近黑色
+          secondary: "#927b6c", // 江戸茶 - Edocha，温暖的褐色
+          tertiary: "#b4a89c", // 胡桃 - Kurumi，淡褐色
+          highlight: "rgba(212, 103, 25, 0.9)", // 利休白茶 - Rikyushiracha，极淡的暖色高亮
+          textHighlight: "rgba(146, 123, 108, 0.2)", // 江戸茶 - Edocha 的淡色版本
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#2d2b2b", // 烏羽 - Karasuhane
+          lightgray: "#3a3837", // 深い烏羽
+          gray: "#8f8681", // 茶鼠 - Chanezumi
+          darkgray: "#eae5e3", // 胡桃 - Kurumi
+          dark: "#eae5e3", // 白鼠 - Shironezumi
+          secondary: "#c7b7ae", // 亜麻色 - Amairo，淡褐色
+          tertiary: "#d3c7c1", // 灰桜 - Haizakura，淡粉褐色
+          highlight: "rgba(255, 255, 255, 0.8)", //
+          textHighlight: "rgba(255, 255, 255, 0.2)",
         },
       },
     },
@@ -61,15 +61,15 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "rose-pine-dawn",
+          dark: "tokyo-night",
         },
         keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ markdownLinkResolution: "shortest", externalLinkIcon: false }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
@@ -88,7 +88,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // Plugin.CustomOgImages(),
     ],
   },
 }
