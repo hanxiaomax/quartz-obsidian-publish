@@ -55,8 +55,8 @@
 :root[saved-theme="dark"],
 :root[saved-theme="light"],
 :root {
-  --titleFont: "SourceSerif","NotoSerifJP","NotoSerifSC" ,sans-serif !important;
-  --headerFont: "SourceSerif", "NotoSerifJP", "NotoSerifSC", sans-serif !important;
+  --titleFont: "SourceSerif","NotoSerifSC","NotoSerifJP" ,sans-serif !important;
+  --headerFont: "SourceSerif" ,"NotoSerifSC","NotoSerifJP", sans-serif !important;
   --bodyFont: "NotoSans","NotoSansSC", "NotoSansJP", !important;
   --codeFont: "JetBrainsMono", monospace !important;
 }
