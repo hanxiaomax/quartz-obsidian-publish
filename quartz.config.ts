@@ -36,7 +36,7 @@ const config: QuartzConfig = {
           dark: "#2d2b2b", // 烏羽 - Karasuhane，近黑色
           secondary: "#927b6c", // 江戸茶 - Edocha，温暖的褐色
           tertiary: "rgba(212, 103, 25, 0.9)",
-          highlight: "rgba(212, 103, 25, 0.5)",
+          highlight: "rgba(212, 103, 25, 0.9)",
           textHighlight: "rgba(146, 123, 108, 0.2)", // 江戸茶 - Edocha 的淡色版本
         },
         darkMode: {
