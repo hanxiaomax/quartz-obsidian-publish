@@ -26,7 +26,7 @@
     }
 
     .switch .slider {
-      background-color: var(--highlight);
+      background-color: var(--tertiary);
       i {
         transform: rotate(180deg);
       }
@@ -55,7 +55,7 @@
       height: 40px;
       border: none;
       border-radius: 50%;
-      background-color: var(--highlight);
+      background-color: var(--tertiary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,7 +80,7 @@
         right: calc(100% + 10px);
         top: 50%;
         transform: translateY(-50%) translateX(10px);
-        color: var(--gray);
+        color: var(--tertiary);
         padding: 4px;
         font-size: 14px;
         white-space: nowrap;
@@ -91,7 +91,7 @@
       }
 
       &:hover {
-        background-color: var(--highlight);
+        background-color: var(--tertiary);
         transform: scale(1.1);
 
         &::before {
@@ -224,7 +224,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: var(--highlight);
+      background-color: var(--tertiary);
       transition: all 0.3s ease;
       border-radius: 50%;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -235,7 +235,7 @@
       padding: 0;
 
       &:hover {
-        background-color: var(--highlight);
+        background-color: var(--tertiary);
         i {
           color: var(--light);
         }

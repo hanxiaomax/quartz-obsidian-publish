@@ -35,8 +35,8 @@ const config: QuartzConfig = {
           darkgray: "#595455", // 墨 - Sumi，深沉的暖灰
           dark: "#2d2b2b", // 烏羽 - Karasuhane，近黑色
           secondary: "#927b6c", // 江戸茶 - Edocha，温暖的褐色
-          tertiary: "#b4a89c", // 胡桃 - Kurumi，淡褐色
-          highlight: "rgba(212, 103, 25, 0.9)", // 利休白茶 - Rikyushiracha，极淡的暖色高亮
+          tertiary: "rgba(212, 103, 25, 0.9)",
+          highlight: "rgba(212, 103, 25, 0.5)",
           textHighlight: "rgba(146, 123, 108, 0.2)", // 江戸茶 - Edocha 的淡色版本
         },
         darkMode: {
@@ -47,7 +47,7 @@ const config: QuartzConfig = {
           dark: "#eae5e3", // 白鼠 - Shironezumi
           secondary: "#c7b7ae", // 亜麻色 - Amairo，淡褐色
           tertiary: "#d3c7c1", // 灰桜 - Haizakura，淡粉褐色
-          highlight: "rgba(255, 255, 255, 0.8)", //
+          highlight: "rgba(143, 159, 169, 0.15)", //
           textHighlight: "rgba(255, 255, 255, 0.2)",
         },
       },
