@@ -9,17 +9,17 @@
 // Tittle and header font
 @font-face {
   font-family: "SourceSerif";
-  src: url("/quartz-obsidian-publish/static/fonts/SourceSerif4-Light.ttf") format("truetype");
+  src: url("/static/fonts/SourceSerif4-Light.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "NotoSerifJP";
-  src: url("/quartz-obsidian-publish/static/fonts/NotoSerifJP-Light.ttf") format("truetype");
+  src: url("/static/fonts/NotoSerifJP-Light.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "NotoSerifSC";
-  src: url("/quartz-obsidian-publish/static/fonts/NotoSansSC-Light.ttf") format("truetype");
+  src: url("/static/fonts/NotoSansSC-Light.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -27,19 +27,19 @@
 // body font
 @font-face {
   font-family: "NotoSans";
-  src: url("/quartz-obsidian-publish/static/fonts/NotoSans-Thin.ttf") format("truetype");
+  src: url("/static/fonts/NotoSans-Thin.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "NotoSansSC";
-  src: url("/quartz-obsidian-publish/static/fonts/NotoSansSC-Thin.ttf") format("truetype");
+  src: url("/static/fonts/NotoSansSC-Thin.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "NotoSansJP";
-  src: url("/quartz-obsidian-publish/static/fonts/NotoSansJP-Thin.ttf") format("truetype");
+  src: url("/static/fonts/NotoSansJP-Thin.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: "JetBrainsMono";
-  src: url("/quartz-obsidian-publish/static/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  src: url("/static/fonts/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
