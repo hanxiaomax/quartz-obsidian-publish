@@ -180,7 +180,7 @@ a {
     &.tag-link {
       background: var(--lightgray);
       padding: 0.2em 0.8em;
-      border-radius: 20px;
+      border-radius: var(--radius);
       font-size: 0.75em;
       color: var(--darkgray);
       transition: all 0.2s ease;
@@ -284,11 +284,12 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   margin: 2.5em 0;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 
   th, td {
     padding: 1em;
-    border-bottom: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--border);
     color: var(--dark);
     text-align: left;
     font-weight: 350;
@@ -296,8 +297,8 @@ table {
 
   th {
     font-weight: 350;
-    background-color: rgba(0, 0, 0, 0.02);
-    border-bottom: 2px solid var(--lightgray);
+    background-color: var(--muted);
+    border-bottom: 2px solid var(--border);
     white-space: nowrap;
   }
 
@@ -306,7 +307,7 @@ table {
   }
 
   tr:hover td {
-    background-color: var(--lightgray);
+    background-color: var(--accent);
   }
 
   // Responsive table styles
@@ -326,8 +327,10 @@ img {
   max-width: 100%;
   height: auto;
   margin: 2.5em auto;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   display: block;
+  box-shadow: var(--shadow-sm);
 }
 
 // Image caption styles
@@ -357,6 +360,8 @@ img + em {
       height: 100vh;
       position: sticky;
       font-size: 1rem;
+      background-color: var(--sidebar);
+      border-right: 1px solid var(--border);
       
 
       @media (min-width: 800px) {
@@ -384,7 +389,7 @@ img + em {
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
 
   & > .popover-inner {
-    width: 50rem;
+    width: 35rem;
     max-height: 25rem;
     padding: 1.5rem 2rem;
     padding-top: 2rem;
