@@ -8,47 +8,47 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "软体动物",
+    pageTitleSuffix: "Software animal",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "hanxiaomax.github.io/quartz-obsidian-publish",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Silkscreen",
+        body: "Silkscreen",
+        code: "Silkscreen",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "oklch(0.98 0.01 95.10)", // 米白色背景
+          lightgray: "oklch(0.92 0.01 92.99)", // 浅灰色
+          gray: "oklch(0.61 0.01 97.42)", // 中性灰
+          darkgray: "oklch(0.43 0.02 98.60)", // 深灰色
+          dark: "oklch(0.34 0.03 95.72)", // 近黑色
+          secondary: "oklch(0.62 0.14 39.04)", // 橙色
+          tertiary: "oklch(0.67 0.13 38.76)", // 深橙色
+          highlight: "rgba(143, 159, 169, 0.15)", // 高亮色
+          textHighlight: "rgba(98, 84, 73, 0.2)", // 文本高亮色
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "oklch(0.27 0.00 106.64)", // 深色背景
+          lightgray: "oklch(0.31 0.00 106.60)", // 深色浅灰
+          gray: "oklch(0.77 0.02 99.07)", // 深色中灰
+          darkgray: "oklch(0.92 0.00 106.48)", // 深色深灰
+          dark: "oklch(0.98 0.01 95.10)", // 深色文本
+          secondary: "oklch(0.67 0.13 38.76)", // 深色橙色
+          tertiary: "oklch(0.67 0.13 38.7)", // 深色强调色
+          highlight: "rgba(143, 159, 169, 0.15)", // 深色高亮
+          textHighlight: "rgba(255, 255, 255, 0.2)", // 深色文本高亮
         },
       },
     },
@@ -61,15 +61,19 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "rose-pine-dawn",
+          dark: "tokyo-night",
         },
         keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({
+        markdownLinkResolution: "shortest",
+        externalLinkIcon: false,
+        prettyLinks: false,
+      }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
@@ -88,7 +92,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // Plugin.CustomOgImages(),
     ],
   },
 }
